@@ -1,79 +1,153 @@
-<html>
-
-    <head>
-<title> koenigsegg </title>
-   
-
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    
-    <body>
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
-<label> first name   </label>
-        <input type="text">
-       <br>
-<label> last name  </label>
-         <input type="text">
-        <br>
-        <label> your email </label>
-         <input type="email">
-        <br>
-        <label> password </label>
-         <input type="password">
-        <br>
-        <label> phone number </label>
-         <input type="tel">
-        <br>
-        
-        
-        
-        
-        <h1>Koenigsegg </h1>  
-<p>
-    Koenigsegg Automotive AB
+    <meta charset="UTF-8">
+    <title>Koenigsegg</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0d0d0d;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
 
-    is a Swedish manufacturer of high-performance sports cars based in Ängelholm, Skåne County, Sweden.
+        ul {
+            list-style-type: none;
+            padding: 1em;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
 
-Koenigsegg cars have on several occasions broken various production car speed records.
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
 
+        ul li a:hover {
+            color: #e60000;
+        }
 
-The company was founded in 1994 in Sweden by Christian von Koenigsegg, with the intention of producing a "world-class" sports car. Many years of development and testing led to the CC8S, the company's first street-legal production car, which was introduced in 2002.[4]
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 1em;
+            animation: fadeIn 2s ease-out forwards;
+        }
 
-In 2006, Koenigsegg began production of the CCX, which uses an engine created in-house specifically for the car. The goal was to develop a car homologated for use worldwide, particularly the United States whose strict regulations did not allow the import of earlier Koenigsegg models.[4]
+        p {
+            width: 80%;
+            margin: 2em auto;
+            line-height: 1.6;
+            font-size: 1.1em;
+            animation: slideUp 2s ease-out forwards;
+        }
 
-In March 2009, the CCXR was listed by Forbes as one of "the world's most beautiful cars".[5]
+        iframe {
+            display: block;
+            margin: 2em auto;
+            border-radius: 10px;
+            animation: fadeIn 3s ease-out forwards;
+        }
 
-In December 2010, the Agera won the BBC Top Gear Hypercar of the Year Award.[6]
+        img {
+            margin: 1em;
+            border-radius: 10px;
+            animation: zoomIn 1.5s ease-out forwards;
+        }
 
-Apart from developing, manufacturing and selling the Koenigsegg line of sports cars, Koenigsegg is also involved in "green technology" development programmes beginning with the CCXR ("Flower Power") flex-fuel sports car and continuing through the present with the Jesko. Koenigsegg is also active in development programs of plug-in electric cars' systems and next-generation reciprocating engine technologies. Koenigsegg has also developed a camless piston engine which found its first application in the Gemera, which was introduced in 2020.[7]
+        a {
+            display: block;
+            text-align: center;
+            color: #00aaff;
+            margin: 1em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-Koenigsegg develops and produces most of the main systems, subsystems and components needed for its cars in-house instead of relying on subcontractors.[8]
+        a:hover {
+            color: #ff0000;
+        }
 
-In January 2019, Koenigsegg sold a 20% stake in the company to Swedish electric car manufacturer (Egstrand & Lundgren), National Electric Vehicle Sweden (NEVS), for US$171 million.
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-</p>
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-<img width="30%" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Koenigsegg_logotype2014.png">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5BBTghKXjDE?si=RovkYngwDnRD4lOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br>
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
 
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
 
-<img  width="30%"   src="https://www.topgear.com/sites/default/files/2025/06/bbee003cb9be95f5_org.jpg"> 
+    <h1>Koenigsegg</h1>
+    <p>
+        Koenigsegg Automotive AB is a Swedish manufacturer of high-performance sports cars based in Ängelholm, Skåne County, Sweden.
+        <br><br>
+        Koenigsegg cars have broken various production car speed records. The company was founded in 1994 by Christian von Koenigsegg. Many years of testing led to the CC8S, their first street-legal production car.
+        <br><br>
+        The CCX, introduced in 2006, used an in-house engine to meet global regulations. The CCXR was named one of "the world's most beautiful cars" by Forbes in 2009.
+        <br><br>
+        Koenigsegg focuses on innovation — from flex-fuel "Flower Power" engines to camless technology found in the Gemera (2020). Most parts are made in-house. In 2019, a 20% stake was sold to NEVS for $171 million.
+    </p>
 
-<img width="30%" src="https://di-uploads-development.dealerinspire.com/koenigseggflorida/uploads/2019/08/the-new-koenigsegg-regera.jpg">
+    <img width="30%" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Koenigsegg_logotype2014.png">
 
-<img width="30%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Koenigsegg_agera.jpg/960px-Koenigsegg_agera.jpg" >
-   <img width="30%" src="https://koenigsegg-cdn-g7eehhd6f0ewcaff.z02.azurefd.net/drupal/styles/1920x1400/azure/2022-02/IMG_3982.jpg?h=6f6b169f&itok=TdJKiAYMhttps://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Koenigsegg_agera.jpg/960px-Koenigsegg_agera.jpghttps://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Koenigsegg_agera.jpg/960px-Koenigsegg_agera.jpg" >
-<img width="30%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuGf7v3sI9XNw3BKapvcKTR_o3ux5ouVCGqg&s.jpg">
-<a href="https://www.koenigsegg.com/megacars"> koenigsegg office </a>
-<br>
- <a href=""> koenigsegg wikipedia </a>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5BBTghKXjDE?si=RovkYngwDnRD4lOw"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <br>
+
+    <img width="30%" src="https://www.topgear.com/sites/default/files/2025/06/bbee003cb9be95f5_org.jpg">
+    <img width="30%" src="https://i.pinimg.com/736x/08/ab/75/08ab758de5afe66971698767f0e12c4d.jpg">
+    <img width="30%" src="https://di-uploads-development.dealerinspire.com/koenigseggflorida/uploads/2019/08/the-new-koenigsegg-regera.jpg">
+    <img width="30%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Koenigsegg_agera.jpg/960px-Koenigsegg_agera.jpg">
+    <img width="30%" src="https://koenigsegg-cdn-g7eehhd6f0ewcaff.z02.azurefd.net/drupal/styles/1920x1400/azure/2022-02/IMG_3982.jpg?h=6f6b169f&itok=TdJKiAYM">
+
+    <a href="https://www.koenigsegg.com/megacars">Koenigsegg Official Site</a>
+    <a href="https://en.wikipedia.org/wiki/Koenigsegg">Koenigsegg Wikipedia</a>
 </body>
 
 </html>
