@@ -9,7 +9,7 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
     padding: 20px;
-    background: linear-gradient(to right , black,grey , white);
+    background: linear-gradient(to right , black,darkgrey , grey ,darkgrey , black);
   }
   
   /* Container */
